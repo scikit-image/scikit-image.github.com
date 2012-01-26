@@ -45,15 +45,18 @@ Announcements
 - **Release!** Version 0.3 10/10/2011
 
 - **Release Sprints** Stanford campus (16 September), online (18 September),
-  online (24 September) 2011
+  online (24 September)
 
 - **EuroSciPy Sprint:** at ENS Paris, 29 September 2011
 
-~~~~~~~~~~
-Developers
-~~~~~~~~~~
+- **SciPy2011 Sprint:** Join us for `a sprint
+  <http://conference.scipy.org/scipy2011/sprints.php>`__ at the 10th SciPy
+  conference in Austin, Texas.
 
- - `Pull requests
-   <https://github.com/scikits-image/scikits-image/pulls>`__
- - `Bug reports <https://github.com/scikits-image/scikits-image/issues>`__
+- **Google Summer of Code 2011:** We are glad to announce our
+  involvement in this year's Google Summer of Code project.
+  Congratulations to `Pieter Holtzhausen
+  <http://pythonimaging.blogspot.com/>`__, who is is making `focused
+  improvements to the project
+  <http://pythonimaging.blogspot.com/2011/04/gsoc2011.html>`__.
 
