@@ -31,6 +31,10 @@ or
 
   easy_install -U scikits-image
 
+`Windows binaries
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikits.image>`__ are
+kindly provided by Christoph Gohlke.
+
 Latest development version
 --------------------------
 
