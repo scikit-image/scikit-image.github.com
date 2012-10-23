@@ -48,6 +48,8 @@ h6 {
 }
 .logo img {
     height: 70px;
+    width: auto;
+    object-fit: contain;
 }
 
 .hero {
