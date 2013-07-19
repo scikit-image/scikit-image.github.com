@@ -39,11 +39,18 @@
     <div class="navbar">
         <div class="navbar-inner">
             <ul class="nav">
-                <li><a href="/">Home</a></li>
+                <script type="text/javascript" src="http://scikit-image.org/docs/dev/_static/docversions.js"></script>
+
+<li><a href="/">Home</a></li>
 <li><a href="download.html">Download</a></li>
 <li><a href="/docs/dev/auto_examples">Gallery</a></li>
-<li><a href="/docs/dev">Documentation</a></li>
+<li><a id="docs">Documentation</a></li>
 <li><a href="https://github.com/scikit-image/scikit-image">Source</a></li>
+
+<script type="text/javascript">
+  var a = document.getElementById('docs');
+  a.href = '/docs/' + stable_version();
+</script>
             </ul>
             <form class="navbar-form pull-right" action="/docs/dev/search.html" method="get">
                 <input type="text" class="search span3" name="q" placeholder="Search documentation ...">
@@ -80,7 +87,7 @@
         </div>
         <div class="span3"><div class="well">
     <strong>Stable</strong>
-    <p>0.8.2 - March 2013</p>
+    <p>0.8.0 - March 2013</p>
     <a class="btn btn-small" href="download.html"><i class="icon-download"></i> Download</a>
 </div>
 <div class="well">
@@ -105,7 +112,8 @@
     </script>
 </div>
 
-<div class="clearfix"></div><h4 class="sidebar-box-heading">Links</h4>
+<div class="clearfix"></div>
+<h4 class="sidebar-box-heading">Links</h4>
 <div class="well sidebar-box">
     <ul class="nav nav-list">
         <li><a class="reference external"
