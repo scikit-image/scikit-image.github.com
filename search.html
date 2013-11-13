@@ -85,9 +85,23 @@
   </div>
 
         </div>
-        <div class="span3"><div class="well">
+        <div class="span3"><script type="text/javascript">
+ $.getJSON('http://pypi.python.org/pypi/scikit-image/json?callback=?',
+           function(data) {
+             var month_names = ["January", "February", "March", "April", "May", "June",
+                                "July", "August", "September", "October", "November", "December"];
+             var upload_time = data.urls[0].upload_time;
+             $('#stable-version').html(data.info.version + " - "
+                                       + month_names[parseInt(upload_time.substring(5, 7))-1] + " "
+                                       + upload_time.substring(0, 4));
+
+           });
+</script>
+
+<div class="well">
     <strong>Stable</strong>
-    <p>0.9.0 - October 2013</p>
+    <p id="stable-version"/>x.y.z</p>
+
     <a class="btn btn-small" href="download.html"><i class="icon-download"></i> Download</a>
 </div>
 <div class="well">
@@ -112,8 +126,7 @@
     </script>
 </div>
 
-<div class="clearfix"></div>
-<h4 class="sidebar-box-heading">Links</h4>
+<div class="clearfix"></div><h4 class="sidebar-box-heading">Links</h4>
 <div class="well sidebar-box">
     <ul class="nav nav-list">
         <li><a class="reference external"
@@ -128,7 +141,7 @@
 <div class="well sidebar-box">
     <ul class="nav nav-list">
         <li><a class="reference external"
-                href="http://opencv.willowgarage.com">OpenCV</a></li>
+                href="http://opencv.org">OpenCV</a></li>
         <li><a class="reference external"
                 href="http://scikit-learn.org">Scikit-learn</a></li>
         <li><a class="reference external"
