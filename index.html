@@ -78,10 +78,10 @@ peer-reviewed code, written by an active <a class="reference external" href="htt
 visit our <a class="reference external" href="/docs/dev/auto_examples">gallery</a>.</p>
 <div class="row-fluid container">
 <div class="span6 container">
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">data</span><span class="p">,</span> <span class="n">io</span><span class="p">,</span> <span class="n">filters</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">data</span><span class="p">,</span> <span class="n">io</span><span class="p">,</span> <span class="nb">filter</span>
 
 <span class="n">image</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">coins</span><span class="p">()</span> <span class="c"># or any NumPy array!</span>
-<span class="n">edges</span> <span class="o">=</span> <span class="n">filters</span><span class="o">.</span><span class="n">sobel</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+<span class="n">edges</span> <span class="o">=</span> <span class="nb">filter</span><span class="o">.</span><span class="n">sobel</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
 <span class="n">io</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">edges</span><span class="p">)</span>
 <span class="n">io</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -202,6 +202,8 @@ http://dx.doi.org/10.7717/peerj.453
                 href="http://luispedro.org/software/mahotas">Mahotas</a></li>
         <li><a class="reference external"
                 href="http://simplecv.org">SimpleCV</a></li>
+        <li><a class="reference external"
+                href="http://simpleitk.org">SimpleITK</a></li>
         <li><a class="reference external"
                 href="http://ilastik.org/">Ilastik</a></li>
     </ul>
