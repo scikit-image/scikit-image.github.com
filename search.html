@@ -51,6 +51,8 @@
 <li><a href="download.html">Download</a></li>
 <li><a href="/docs/dev/auto_examples">Gallery</a></li>
 <li><a href="/docs/stable">Documentation</a></li>
+<li><a href="community_guidelines.html">Community
+        Guidelines</a></li>
 <li><a href="https://github.com/scikit-image/scikit-image">
     <img src="_static/GitHub-Mark-32px.png" style="height: 15px; width: 15px;
                                                    display: inline; float: none;
@@ -103,7 +105,7 @@
                                        + month_names[parseInt(upload_time.substring(5, 7))-1] + " "
                                        + upload_time.substring(0, 4));
              var stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
-             var release_notes_url = $('#release-notes').attr('href') + "/release_" + stable_version_majmin + ".txt";
+             var release_notes_url = $('#release-notes').attr('href') + "/release_" + stable_version_majmin + ".rst";
              $('#release-notes').attr('href', release_notes_url);
 
              var dev_version = stable_version.split(".").map(Number);
@@ -115,7 +117,7 @@
 </script>
 
 <div class="well">
-    <strong>Stable</strong> 
+    <strong>Stable</strong>
     (<a href="https://github.com/scikit-image/scikit-image/tree/master/doc/release" id="release-notes">release notes</a>)
     <p id="stable-version"/>x.y.z</p>
 
