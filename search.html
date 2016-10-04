@@ -51,8 +51,6 @@
 <li><a href="download.html">Download</a></li>
 <li><a href="/docs/dev/auto_examples">Gallery</a></li>
 <li><a href="/docs/stable">Documentation</a></li>
-<li><a href="community_guidelines.html">Community
-        Guidelines</a></li>
 <li><a href="https://github.com/scikit-image/scikit-image">
     <img src="_static/GitHub-Mark-32px.png" style="height: 15px; width: 15px;
                                                    display: inline; float: none;
@@ -95,30 +93,26 @@
 
         </div>
         <div class="span3"><script type="text/javascript">
- $.getJSON('http://pypi.python.org/pypi/scikit-image/json',
+ $.getJSON('http://pypi.python.org/pypi/scikit-image/json?callback=?',
            function(data) {
              var month_names = ["January", "February", "March", "April", "May", "June",
                                 "July", "August", "September", "October", "November", "December"];
              var upload_time = data.urls[0].upload_time;
-             var stable_version = data.info.version;
-             $('#stable-version').html(stable_version + " - "
+             var dev_version = data.info.version;
+             $('#stable-version').html(dev_version + " - "
                                        + month_names[parseInt(upload_time.substring(5, 7))-1] + " "
                                        + upload_time.substring(0, 4));
-             var stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
-             var release_notes_url = $('#release-notes').attr('href') + "/release_" + stable_version_majmin + ".rst";
-             $('#release-notes').attr('href', release_notes_url);
 
-             var dev_version = stable_version.split(".").map(Number);
-             dev_version[1] += 1;
-             dev_version = dev_version.slice(0, 2).join(".");
+             var stable_version = dev_version.split(".").map(Number);
+             stable_version[1] += 1;
+             stable_version = stable_version.slice(0, 2).join(".");
 
-             $('#dev-version').html("pre-" + dev_version);
+             $('#dev-version').html("pre-" + stable_version);
            });
 </script>
 
 <div class="well">
     <strong>Stable</strong>
-    (<a href="https://github.com/scikit-image/scikit-image/tree/master/doc/release" id="release-notes">release notes</a>)
     <p id="stable-version"/>x.y.z</p>
 
     <a class="btn btn-small" href="download.html"><i class="icon-download"></i> Download</a>
@@ -150,7 +144,7 @@
         <li><a class="reference external"
                 href="https://github.com/scikit-image/scikit-image/issues">Issue tracker</a></li>
         <li><a class="reference external"
-                href="http://groups.google.com/group/scikit-image">Mailing list</a></li>
+                href="https://mail.python.org/mailman/listinfo/scikit-image">Mailing list</a></li>
         <li><a class="reference external"
                 href="https://travis-ci.org/scikit-image/scikit-image">Test results</a></li>
     </ul>
