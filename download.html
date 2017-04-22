@@ -45,9 +45,9 @@
     <div class="navbar">
         <div class="navbar-inner">
             <ul class="nav">
-                <li><a href="/">Home</a></li>
-<li><a href="#">Download</a></li>
+                <li><a href="#">Download</a></li>
 <li><a href="/docs/dev/auto_examples">Gallery</a></li>
+
 <li><a href="/docs/stable">Documentation</a></li>
 <li><a href="community_guidelines.html">Community
         Guidelines</a></li>
@@ -67,42 +67,6 @@
         </div>
     </div>
     <div class="row">
-        <div class="span9">
-            
-  <div class="section" id="download">
-<h1>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="stable-release">
-<h2>Stable release<a class="headerlink" href="#stable-release" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="windows">
-<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-image">Windows binaries</a>
-are kindly provided by Christoph Gohlke.</p>
-<p>The latest stable release is also included as part of the <a class="reference external" href="http://enthought.com/products/epd.php">Enthought Python
-Distribution (EPD)</a> and <a class="reference external" href="http://code.google.com/p/pythonxy/wiki/Welcome">Python(x,y)</a>.</p>
-</div>
-<div class="section" id="linux-and-osx">
-<h3>Linux and OSX<a class="headerlink" href="#linux-and-osx" title="Permalink to this headline">¶</a></h3>
-<p>scikit-image can be installed from the <a class="reference external" href="http://pypi.python.org/pypi/scikit-image">Python packaging
-index</a> using</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">scikit</span><span class="o">-</span><span class="n">image</span>
-</pre></div>
-</div>
-<p>or</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">easy_install</span> <span class="o">-</span><span class="n">U</span> <span class="n">scikit</span><span class="o">-</span><span class="n">image</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="latest-development-version">
-<h2>Latest development version<a class="headerlink" href="#latest-development-version" title="Permalink to this headline">¶</a></h2>
-<p>Please refer to the latest <a class="reference external" href="/docs/dev/install.html">build instructions</a>.</p>
-<p>To build the development version of the scikit, you need a C/C++ compiler,
-Python, NumPy and Cython.</p>
-</div>
-</div>
-
-
-        </div>
         <div class="span3"><script type="text/javascript">
  $.getJSON('http://pypi.python.org/pypi/scikit-image/json',
            function(data) {
@@ -125,29 +89,22 @@ Python, NumPy and Cython.</p>
            });
 </script>
 
+
 <div class="well">
     <strong>Stable</strong>
     (<a href="https://github.com/scikit-image/scikit-image/tree/master/doc/release" id="release-notes">release notes</a>)
     <p id="stable-version"/>x.y.z</p>
 
     <a class="btn btn-small" href="#"><i class="icon-download"></i> Download</a>
-</div>
-<div class="well">
+    <strong><br></strong>
+
+    <br/>
     <strong>Development</strong>
     <p id="dev-version">pre-x.y.z</p>
-    <a class="btn btn-small" href="https://github.com/scikit-image/scikit-image"><i class="icon-download"></i> Download</a>
+    <a class="btn btn-small" href="https://github.com/scikit-image/scikit-image#installation-from-source"><i class="icon-download"></i> Download</a>
+
 </div>
 
-<span class="gplus-use">
-    <g:plusone size="medium" href="http://scikit-image.org"></g:plusone>
-    <script type="text/javascript">
-        (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-    </script>
-</span>
 
 <iframe src="http://ghbtns.com/github-btn.html?user=scikit-image&repo=scikit-image&type=watch&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="110"
@@ -162,25 +119,47 @@ Python, NumPy and Cython.</p>
                 href="https://mail.python.org/mailman/listinfo/scikit-image">Mailing list</a></li>
         <li><a class="reference external"
                 href="https://travis-ci.org/scikit-image/scikit-image">Test results</a></li>
+        <li><a class="reference external"
+                href="http://scikit-image.org/docs/stable/contribute.html">Contribute</a></li>
     </ul>
 </div>
-<h4 class="sidebar-box-heading">Related Projects</h4>
-<div class="well sidebar-box">
-    <ul class="nav nav-list">
-        <li><a class="reference external"
-                href="http://opencv.org">OpenCV</a></li>
-        <li><a class="reference external"
-                href="http://scikit-learn.org">Scikit-learn</a></li>
-        <li><a class="reference external"
-                href="http://luispedro.org/software/mahotas">Mahotas</a></li>
-        <li><a class="reference external"
-                href="http://simplecv.org">SimpleCV</a></li>
-        <li><a class="reference external"
-                href="http://simpleitk.org">SimpleITK</a></li>
-        <li><a class="reference external"
-                href="http://ilastik.org/">Ilastik</a></li>
-    </ul>
+
+        </div>
+        <div class="span9">
+            
+  <div class="section" id="download">
+<h1>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="stable-release">
+<h2>Stable release<a class="headerlink" href="#stable-release" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-image">Windows binaries</a>
+are kindly provided by Christoph Gohlke.</p>
+<p>The latest stable release is also included as part of the <a class="reference external" href="http://enthought.com/products/epd.php">Enthought Python
+Distribution (EPD)</a> and <a class="reference external" href="http://code.google.com/p/pythonxy/wiki/Welcome">Python(x,y)</a>.</p>
+<p>For Conda-based distributions (Anaconda, Miniconda), execute:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">scikit</span><span class="o">-</span><span class="n">image</span>
+</pre></div>
 </div>
+</div>
+<div class="section" id="linux-and-osx">
+<h3>Linux and OSX<a class="headerlink" href="#linux-and-osx" title="Permalink to this headline">¶</a></h3>
+<p>scikit-image can be installed from the <a class="reference external" href="http://pypi.python.org/pypi/scikit-image">Python packaging
+index</a> using</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">scikit</span><span class="o">-</span><span class="n">image</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="latest-development-version">
+<h2>Latest development version<a class="headerlink" href="#latest-development-version" title="Permalink to this headline">¶</a></h2>
+<p>Please refer to the latest <a class="reference external" href="/docs/dev/install.html">build instructions</a>.</p>
+<p>To build the development version of the scikit, you need a C/C++ compiler,
+Python, NumPy and Cython.</p>
+</div>
+</div>
+
+
         </div>
     </div>
     <div class="well footer">

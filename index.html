@@ -46,9 +46,9 @@
     <div class="navbar">
         <div class="navbar-inner">
             <ul class="nav">
-                <li><a href="/">Home</a></li>
-<li><a href="download.html">Download</a></li>
+                <li><a href="download.html">Download</a></li>
 <li><a href="/docs/dev/auto_examples">Gallery</a></li>
+
 <li><a href="/docs/stable">Documentation</a></li>
 <li><a href="community_guidelines.html">Community
         Guidelines</a></li>
@@ -68,86 +68,6 @@
         </div>
     </div>
     <div class="row">
-        <div class="span9">
-            
-  <div class="well hero row-fluid summary-box docutils container">
-<div class="gallery-random">
-  <script src="http://scikit-image.org/docs/dev/_static/random.js"></script>
-  <script type="text/javascript">
-    insert_gallery();
-  </script>
-</div>
-
-<h2>Image processing in Python</h2><p><em>scikit-image</em> is a collection of algorithms for image processing.  It
-is available <a class="reference external" href="/docs/dev/license.html">free of charge and free of restriction</a>.  We pride ourselves on high-quality,
-peer-reviewed code, written by an active <a class="reference external" href="https://www.ohloh.net/p/scikit-image/contributors">community of volunteers</a>.</p>
-<a class="btn btn-warning clearfix" href="/download">
-<i class="icon-download icon-white"></i>Download</a></div>
-<div class="section" id="getting-started">
-<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<p>Filtering an image with <code class="docutils literal"><span class="pre">scikit-image</span></code> is easy!  For more examples, please
-visit our <a class="reference external" href="/docs/dev/auto_examples">gallery</a>.</p>
-<div class="row-fluid docutils container">
-<div class="span6 docutils container">
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skimage</span> <span class="k">import</span> <span class="n">data</span><span class="p">,</span> <span class="n">io</span><span class="p">,</span> <span class="n">filters</span>
-
-<span class="n">image</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">coins</span><span class="p">()</span>
-<span class="c1"># ... or any other NumPy array!</span>
-<span class="n">edges</span> <span class="o">=</span> <span class="n">filters</span><span class="o">.</span><span class="n">sobel</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
-<span class="n">io</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">edges</span><span class="p">)</span>
-<span class="n">io</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="well span6 docutils container">
-<img alt="_images/coins-small.png" class="coins-sample span6" src="_images/coins-small.png" />
-<img alt="_images/sobel-coins-small.png" class="coins-sample span6" src="_images/sobel-coins-small.png" />
-</div>
-</div>
-<div class="well hero row-fluid summary-box citation docutils container">
-<b>If you find this project useful, please cite:</b>
-
-<span style="float: right;">
-  [<a href="_static/skimage.bib">BiBTeX</a>]
-</span>
-
-<br/><br/>
-
-Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias,
-François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart,
-Tony Yu and the scikit-image contributors. <b>scikit-image: Image
-processing in Python</b>. PeerJ 2:e453 (2014)
-
-<a href="http://dx.doi.org/10.7717/peerj.453">
-http://dx.doi.org/10.7717/peerj.453
-</a></div>
-</div>
-<div class="section" id="announcements">
-<h1>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><strong>Release!</strong> Version 0.13.0 2017-03-29</li>
-<li><strong>Release!</strong> Version 0.12.0 2016-03-06</li>
-<li><strong>Release!</strong> Version 0.11.0 2015-03-04</li>
-<li><strong>Release!</strong> Version 0.10.0 2014-05-27</li>
-<li>Pre-print of the scikit-image paper: <a class="reference external" href="https://peerj.com/preprints/336/">https://peerj.com/preprints/336/</a></li>
-<li><strong>Release!</strong> Version 0.9.0 2013-10-19</li>
-<li><strong>Release!</strong> Version 0.8.0 2013-03-04</li>
-<li><strong>Release!</strong> Version 0.7.0 2012-09-30</li>
-<li><strong>EuroSciPy Sprint</strong>, Belgium, August 2012</li>
-<li><strong>SciPy 2012 Sprint</strong>, Austin, July 2012</li>
-</ul>
-</div>
-<div class="section" id="developers">
-<h1>Developers<a class="headerlink" href="#developers" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/scikit-image/scikit-image/pulls">Pull requests</a></li>
-<li><a class="reference external" href="https://github.com/scikit-image/scikit-image/issues">Bug reports</a></li>
-<li><a class="reference external" href="http://ohloh.net/p/scikit-image">Ohloh summary</a></li>
-</ul>
-</div>
-
-
-        </div>
         <div class="span3"><script type="text/javascript">
  $.getJSON('http://pypi.python.org/pypi/scikit-image/json',
            function(data) {
@@ -170,29 +90,22 @@ http://dx.doi.org/10.7717/peerj.453
            });
 </script>
 
+
 <div class="well">
     <strong>Stable</strong>
     (<a href="https://github.com/scikit-image/scikit-image/tree/master/doc/release" id="release-notes">release notes</a>)
     <p id="stable-version"/>x.y.z</p>
 
     <a class="btn btn-small" href="download.html"><i class="icon-download"></i> Download</a>
-</div>
-<div class="well">
+    <strong><br></strong>
+
+    <br/>
     <strong>Development</strong>
     <p id="dev-version">pre-x.y.z</p>
-    <a class="btn btn-small" href="https://github.com/scikit-image/scikit-image"><i class="icon-download"></i> Download</a>
+    <a class="btn btn-small" href="https://github.com/scikit-image/scikit-image#installation-from-source"><i class="icon-download"></i> Download</a>
+
 </div>
 
-<span class="gplus-use">
-    <g:plusone size="medium" href="http://scikit-image.org"></g:plusone>
-    <script type="text/javascript">
-        (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-    </script>
-</span>
 
 <iframe src="http://ghbtns.com/github-btn.html?user=scikit-image&repo=scikit-image&type=watch&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="110"
@@ -207,25 +120,91 @@ http://dx.doi.org/10.7717/peerj.453
                 href="https://mail.python.org/mailman/listinfo/scikit-image">Mailing list</a></li>
         <li><a class="reference external"
                 href="https://travis-ci.org/scikit-image/scikit-image">Test results</a></li>
+        <li><a class="reference external"
+                href="http://scikit-image.org/docs/stable/contribute.html">Contribute</a></li>
     </ul>
 </div>
-<h4 class="sidebar-box-heading">Related Projects</h4>
-<div class="well sidebar-box">
-    <ul class="nav nav-list">
-        <li><a class="reference external"
-                href="http://opencv.org">OpenCV</a></li>
-        <li><a class="reference external"
-                href="http://scikit-learn.org">Scikit-learn</a></li>
-        <li><a class="reference external"
-                href="http://luispedro.org/software/mahotas">Mahotas</a></li>
-        <li><a class="reference external"
-                href="http://simplecv.org">SimpleCV</a></li>
-        <li><a class="reference external"
-                href="http://simpleitk.org">SimpleITK</a></li>
-        <li><a class="reference external"
-                href="http://ilastik.org/">Ilastik</a></li>
-    </ul>
+
+        </div>
+        <div class="span9">
+            
+  <div class="well hero row-fluid summary-box docutils container">
+<div class="gallery-random">
+  <script src="http://scikit-image.org/docs/dev/_static/random.js"></script>
+  <script type="text/javascript">
+    insert_gallery();
+  </script>
 </div>
+
+<h2>Image processing in Python</h2><p><em>scikit-image</em> is a collection of algorithms for image processing.  It
+is available <a class="reference external" href="/docs/dev/license.html">free of charge and free of restriction</a>.  We pride ourselves on high-quality,
+peer-reviewed code, written by an active <a class="reference external" href="https://www.ohloh.net/p/scikit-image/contributors">community of volunteers</a>.</p>
+<a class="btn btn-warning clearfix" href="/download">
+<i class="icon-download icon-white"></i>Download</a></div>
+<div class="well hero row-fluid summary-box citation docutils container">
+<b>If you find this project useful, please cite:</b>
+
+<span style="float: right;">
+  [<a href="_static/skimage.bib">BiBTeX</a>]
+</span>
+
+<br/><br/>
+
+Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias,
+François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart,
+Tony Yu and the scikit-image contributors. <b>scikit-image: Image
+processing in Python</b>. PeerJ 2:e453 (2014)
+
+<a href="http://dx.doi.org/10.7717/peerj.453">
+http://dx.doi.org/10.7717/peerj.453
+</a></div>
+<div class="section" id="news">
+<h1>News<a class="headerlink" href="#news" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><strong>Release!</strong> Version 0.12.0 2016-03-06</li>
+<li><strong>Release!</strong> Version 0.11.0 2015-03-04</li>
+<li><strong>Release!</strong> Version 0.10.0 2014-05-27</li>
+<li>Pre-print of the scikit-image paper: <a class="reference external" href="https://peerj.com/preprints/336/">https://peerj.com/preprints/336/</a></li>
+<li><strong>Release!</strong> Version 0.9.0 2013-10-19</li>
+<li><strong>Release!</strong> Version 0.8.0 2013-03-04</li>
+<li><strong>Release!</strong> Version 0.7.0 2012-09-30</li>
+<li><strong>EuroSciPy Sprint</strong>, Belgium, August 2012</li>
+<li><strong>SciPy 2012 Sprint</strong>, Austin, July 2012</li>
+</ul>
+</div>
+<div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>Filtering an image with <code class="docutils literal"><span class="pre">scikit-image</span></code> is easy!  For more examples, please
+visit our <a class="reference external" href="/docs/dev/auto_examples">gallery</a>.</p>
+<div class="row-fluid docutils container">
+<div class="span6 docutils container">
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skimage</span> <span class="k">import</span> <span class="n">data</span><span class="p">,</span> <span class="n">io</span><span class="p">,</span> <span class="n">filters</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">coins</span><span class="p">()</span>
+<span class="c1"># ... or any other NumPy array!</span>
+<span class="n">edges</span> <span class="o">=</span> <span class="n">filters</span><span class="o">.</span><span class="n">sobel</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+<span class="n">io</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">edges</span><span class="p">)</span>
+<span class="n">io</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="well span6 docutils container">
+<img alt="_images/coins-small.png" class="coins-sample span6" src="_images/coins-small.png" />
+<img alt="_images/sobel-coins-small.png" class="coins-sample span6" src="_images/sobel-coins-small.png" />
+</div>
+</div>
+<p>You can read more in our <a class="reference external" href="/docs/dev/user_guide">user guide</a>.</p>
+</div>
+<div class="section" id="developers">
+<h1>Developers<a class="headerlink" href="#developers" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/scikit-image/scikit-image/pulls">Pull requests</a></li>
+<li><a class="reference external" href="https://github.com/scikit-image/scikit-image/issues">Bug reports</a></li>
+<li><a class="reference external" href="http://ohloh.net/p/scikit-image">Ohloh summary</a></li>
+</ul>
+</div>
+
+
         </div>
     </div>
     <div class="well footer">
