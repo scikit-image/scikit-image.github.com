@@ -81,7 +81,7 @@ is guided by the following core team:
      <a href="https://github.com/grlee77" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/6528957?u=2a7658d9dbc4af127f9d90003462e37de4f73fba&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/6528957?u=b74cdd23ec9edad8546b503b3fe86b927de41c25&v=4&s=40"
              loading="lazy"
              alt="Avatar picture of @grlee77"
            />
@@ -197,23 +197,6 @@ is guided by the following core team:
 .. raw:: html
 
    <div class="team-member">
-     <a href="https://github.com/sciunto" class="team-member-name">
-        <div class="team-member-photo">
-           <img
-             src="https://avatars.githubusercontent.com/u/335370?u=b9359e95f23c1864c804ba22f41bcf540951b20e&v=4&s=40"
-             loading="lazy"
-             alt="Avatar picture of @sciunto"
-           />
-        </div>
-        François Boulogne
-     </a>
-     <div class="team-member-handle">@sciunto</div>
-   </div>
-
-
-.. raw:: html
-
-   <div class="team-member">
      <a href="https://github.com/soupault" class="team-member-name">
         <div class="team-member-photo">
            <img
@@ -267,6 +250,23 @@ We thank these previously-active core developers for their contributions to scik
         Steven Silvester
      </a>
      <div class="team-member-handle">@blink1073</div>
+   </div>
+
+
+.. raw:: html
+
+   <div class="team-member">
+     <a href="https://github.com/sciunto" class="team-member-name">
+        <div class="team-member-photo">
+           <img
+             src="https://avatars.githubusercontent.com/u/335370?u=b9359e95f23c1864c804ba22f41bcf540951b20e&v=4&s=40"
+             loading="lazy"
+             alt="Avatar picture of @sciunto"
+           />
+        </div>
+        François Boulogne
+     </a>
+     <div class="team-member-handle">@sciunto</div>
    </div>
 
 
