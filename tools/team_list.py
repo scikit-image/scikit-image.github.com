@@ -27,9 +27,11 @@ def api(url):
 
 
 resp = api(team_url)
+print("Response is:", resp)
 team = sorted(resp, key=lambda user: user['login'].lower())
 
 resp = api(emeritus_team_url)
+print("Response is:", resp)
 emeritus_team = sorted(resp, key=lambda user: user['login'].lower())
 
 
