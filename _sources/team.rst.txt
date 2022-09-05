@@ -13,7 +13,7 @@ is guided by the following core team:
      <a href="https://github.com/alexdesiqueira" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/5776022?u=7677a4391774e25b0c0d5c946021a8ab7a1ee519&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/5776022?u=d73123d41fbf598789c6fecd972a6058af2a902f&v=4&s=40"
              loading="lazy"
              alt="Avatar picture of @alexdesiqueira"
            />
@@ -115,7 +115,7 @@ is guided by the following core team:
      <a href="https://github.com/lagru" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/20140352?u=aa80243f7c2da2341ac944d70a33daef0c369aed&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/20140352?u=fa6debadd435c15847d1435c49753f349e2d3526&v=4&s=40"
              loading="lazy"
              alt="Avatar picture of @lagru"
            />
