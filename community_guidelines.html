@@ -4,39 +4,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Community Guidelines &mdash; scikit-image</title>
+    <title>Community Guidelines &mdash; scikit-image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link href="_static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="_static/css/custom.css"
-    rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-        <link rel="stylesheet" href="_static/scikit-image.css" type="text/css" />
-        <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="_static/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-        <script type="text/javascript" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
-        <link rel="search" title="Search" href="search.html" />
-        <link rel="top" title="scikit-image" href="index.html" />
+<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+<link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css?v=4b16d231" />
+<link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=a4487da4" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" />
+<link rel="stylesheet" type="text/css" href="_static/custom.css?v=f84a2825" />
+<link rel="stylesheet" type="text/css" href="_static/custom.css?v=f84a2825" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="scikit-image" href="index.html" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link rel="shortcut icon" href="_static/favicon.ico">
 </head>
 <body class="container">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="_static/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: './',
+            VERSION: '',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true
+              };
+    </script>
     <a href="https://scikit-image.org" class="logo"><img src="_static/img/logo.png" alt=""></a>
     <div class="clearfix"></div>
     <div class="navbar">
@@ -69,16 +62,20 @@
 
  const octokit = new Octokit();
 
+ function notRc(release) {
+   return !release.tag_name.includes('rc');
+ }
+
  const releases = await octokit.rest.repos.listReleases({
    owner: 'scikit-image',
    repo: 'scikit-image',
-   per_page: 1,
+   per_page: 5,
    page: 1
  });
 
  const month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
- let release = releases.data[0];
+ let release = releases.data.filter(notRc)[0];
  let tag = release.tag_name;
  let stable_version = tag.slice(1);
 
