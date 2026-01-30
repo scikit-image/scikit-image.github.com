@@ -4,24 +4,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>scikit-image: Image processing in Python &mdash; scikit-image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta content="WiJmSOQVA_wT4Zdi1rt3iWNN_EZTcjV6d5GrLHpKVZc" name="google-site-verification" />
 
+
+    <!-- Ubuntu font for logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-<link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css?v=4b16d231" />
-<link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=a4487da4" />
+<link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=b72b686c" />
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" />
-<link rel="stylesheet" type="text/css" href="_static/custom.css?v=f84a2825" />
-<link rel="stylesheet" type="text/css" href="_static/custom.css?v=f84a2825" />
+<link rel="stylesheet" type="text/css" href="_static/custom.css?v=2f292101" />
+<link rel="stylesheet" type="text/css" href="_static/custom.css?v=2f292101" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="scikit-image" href="#" />
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link rel="shortcut icon" href="_static/favicon.ico">
 </head>
-<body class="container">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="_static/js/bootstrap.min.js"></script>
+<body>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT: './',
@@ -31,135 +40,198 @@
             HAS_SOURCE: true
               };
     </script>
-    <a href="https://scikit-image.org" class="logo"><img src="_static/img/logo.png" alt=""></a>
-    <div class="clearfix"></div>
-    <div class="navbar">
-        <div class="navbar-inner">
-            <ul class="nav">
-                <li><a href="/docs/stable/user_guide/install.html">Installation</a></li>
-<li><a href="/docs/stable/auto_examples">Gallery</a></li>
 
-<li><a href="/docs/stable">Documentation</a></li>
-<li><a href="community_guidelines.html">Community</a></li>
-<li><a href="https://github.com/scikit-image/scikit-image">
-    <img src="_static/GitHub-Mark-32px.png" style="height: 15px; width: 15px;
-                                                   display: inline; float: none;
-                                                   padding-bottom: 3px;"/>
-    Source</a>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable skip-link">Skip to main content</a>
+
+    <div class="container">
+        <header>
+            <a href="https://scikit-image.org" class="logo" aria-label="scikit-image home">
+                <img src="_static/img/logo.png" alt="">
+                <span class="logo-text">
+                    <span class="logo-title">scikit-image</span>
+                    <span class="logo-tagline">Image processing in Python</span>
+                </span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/docs/stable/user_guide/install.html">Installation</a></li>
+<li class="nav-item"><a class="nav-link" href="/docs/stable/auto_examples">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="/docs/stable">Documentation</a></li>
+<li class="nav-item"><a class="nav-link" href="community_guidelines.html">Community</a></li>
+<li class="nav-item">
+    <a class="nav-link" href="https://github.com/scikit-image/scikit-image">
+        <img src="_static/GitHub-Mark-32px.png" alt="GitHub" class="github-icon" loading="lazy">
+        Source
+    </a>
 </li>
 
-            </ul>
-            <form class="navbar-form pull-right" action="/docs/stable/search.html" method="get">
-                <input type="text" class="search span3" name="q" placeholder="Search documentation ...">
-                <input type="hidden" name="check_keywords" value="yes" >
-                <input type="hidden" name="area" value="default" >
-            </form>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span3"><script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
-<script type="module">
+                    </ul>
+                    <form class="d-flex search-form" action="/docs/stable/search.html" method="get" role="search">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Search documentation..."
+                               aria-label="Search documentation">
+                        <input type="hidden" name="check_keywords" value="yes">
+                        <input type="hidden" name="area" value="default">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main content area -->
+        <div class="row g-4">
+            <aside class="col-lg-3 sidebar order-2 order-lg-1" aria-label="Sidebar navigation"><script type="module">
  import { Octokit } from "https://esm.sh/octokit";
 
  const octokit = new Octokit();
+ const month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
  function notRc(release) {
    return !release.tag_name.includes('rc');
  }
 
- const releases = await octokit.rest.repos.listReleases({
-   owner: 'scikit-image',
-   repo: 'scikit-image',
-   per_page: 5,
-   page: 1
- });
+ try {
+   const releases = await octokit.rest.repos.listReleases({
+     owner: 'scikit-image',
+     repo: 'scikit-image',
+     per_page: 5,
+     page: 1
+   });
 
- const month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+   const release = releases.data.find(r => !r.draft && !r.prerelease && notRc(r));
+   if (release && release.published_at) {
+     const tag = release.tag_name;
+     const stable_version = tag.slice(1);
 
- let release = releases.data.filter(notRc)[0];
- let tag = release.tag_name;
- let stable_version = tag.slice(1);
+     const date = release.published_at;
+     const year = date.substring(0, 4);
+     const month = date.substring(5, 7);
 
- let date = release.published_at;
- let year = date.substring(0, 4);
- let month = date.substring(5, 7);
- let day = date.substring(8, 10);
+     document.getElementById('stable-version').textContent =
+       stable_version + " - " + month_names[parseInt(month)-1] + " " + year;
 
- $('#stable-version').html(
-   stable_version + " - " + month_names[parseInt(month)-1] + " " + year
- );
- var stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
- var release_notes_url = $('#release-notes').attr('href') + "/release_" + stable_version_majmin + ".rst";
- $('#release-notes').attr('href', release_notes_url);
+     const stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
+     const releaseNotesLink = document.getElementById('release-notes');
+     const release_notes_url = releaseNotesLink.getAttribute('href') + "/release_" + stable_version_majmin + ".rst";
+     releaseNotesLink.setAttribute('href', release_notes_url);
 
- var dev_version = stable_version.split(".").map(Number);
- dev_version[1] += 1;
- dev_version = dev_version.slice(0, 2).join(".");
+     let dev_version = stable_version.split(".").map(Number);
+     dev_version[1] += 1;
+     dev_version = dev_version.slice(0, 2).join(".");
 
- $('#dev-version').html("pre-" + dev_version);
+     document.getElementById('dev-version').textContent = "pre-" + dev_version;
+   } else {
+     console.warn('No eligible non-RC releases found');
+   }
+ } catch (error) {
+   console.error('Failed to fetch release information:', error);
+ }
 </script>
 
 
-<div class="well">
-    <strong>Stable</strong>
-    (<a href="https://github.com/scikit-image/scikit-image/tree/main/doc/source/release_notes" id="release-notes">release notes</a>)
-    <p id="stable-version"/>x.y.z</p>
+<div class="card sidebar-box">
+    <div class="card-body">
+        <strong>Stable</strong>
+        (<a href="https://github.com/scikit-image/scikit-image/tree/main/doc/source/release_notes" id="release-notes">release notes</a>)
+        <p id="stable-version">x.y.z</p>
 
-    <a class="btn btn-small" href="https://scikit-image.org/docs/stable/user_guide/install.html#installation-via-pip-and-conda"><i class="icon-download"></i> Download</a>
-    <strong><br></strong>
+        <a class="btn btn-sm btn-primary" href="https://scikit-image.org/docs/stable/user_guide/install.html#installation-via-pip-and-conda">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg>
+            Download
+        </a>
 
-    <br/>
-    <strong>Development</strong>
-    <p id="dev-version">pre-x.y.z</p>
-    <a class="btn btn-small" href="https://scikit-image.org/docs/stable/user_guide/install.html#installing-scikit-image-for-contributors"><i class="icon-download"></i> Download</a>
-</div><div class="well sidebar-box">
-    <ul class="nav nav-list">
-      <li>
-        <a class="reference external"
-           href="https://github.com/scikit-image/scikit-image">GitHub
+        <br/><br/>
+        <strong>Development</strong>
+        <p id="dev-version">pre-x.y.z</p>
+        <a class="btn btn-sm btn-outline-primary" href="https://scikit-image.org/docs/stable/user_guide/install.html#installing-scikit-image-for-contributors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg>
+            Download
+        </a>
+    </div>
+</div><div class="card sidebar-box">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link"
+           href="https://github.com/scikit-image/scikit-image"
+           aria-label="GitHub repository">
+          <strong>GitHub</strong>
           <span class="sidebar-subtitle">source &amp; bug reports</span>
         </a>
       </li>
-      <li>
-        <a class="reference external"
-           href="https://scikit-image.org/docs/stable/development/contribute.html">Contribute
-          <span class="sidebar-subtitle">get involved</span></a></li>
+      <li class="nav-item">
+        <a class="nav-link"
+           href="https://scikit-image.org/docs/stable/development/contribute.html"
+           aria-label="Contribution guide">
+          <strong>Contribute</strong>
+          <span class="sidebar-subtitle">get involved</span>
         </a>
       </li>
-      <li>
-        <a class="reference external"
-           href="https://forum.image.sc/tags/scikit-image">Get Help
+      <li class="nav-item">
+        <a class="nav-link"
+           href="https://forum.image.sc/tags/scikit-image"
+           aria-label="Community forum">
+          <strong>Get Help</strong>
           <span class="sidebar-subtitle">advice &amp; community</span>
         </a>
       </li>
-      <li>
-        <a class="reference external"
-           href="https://discuss.scientific-python.org/c/contributor/skimage">Discuss
+      <li class="nav-item">
+        <a class="nav-link"
+           href="https://discuss.scientific-python.org/c/contributor/skimage"
+           aria-label="Contributor discussions">
+          <strong>Discuss</strong>
           <span class="sidebar-subtitle">contributor talk</span>
         </a>
       </li>
-      <li>
-        <a class="reference external"
-           href="https://stackoverflow.com/questions/tagged/scikit-image">StackOverflow
+      <li class="nav-item">
+        <a class="nav-link"
+           href="https://stackoverflow.com/questions/tagged/scikit-image"
+           aria-label="Stack Overflow questions">
+          <strong>StackOverflow</strong>
           <span class="sidebar-subtitle">coding help</span>
         </a>
       </li>
     </ul>
 </div>
 
-<div style="padding-top: 0.5rem; padding-bottom: 2rem;">
-  <a href="https://opencollective.com/scikit-image" target="_blank">
-    <img src="https://opencollective.com/scikit-image/donate/button@2x.png?color=white" width=300 />
+<div class="text-center py-3">
+  <a href="https://opencollective.com/scikit-image"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Donate via Open Collective">
+    <img src="https://opencollective.com/scikit-image/donate/button@2x.png?color=white"
+         alt="Donate button"
+         width="300"
+         loading="lazy">
   </a>
 </div>
 
-<div style="text-align: center;" width="100%">
-  <iframe src="https://ghbtns.com/github-btn.html?user=scikit-image&repo=scikit-image&type=star&count=true"
-    frameborder="0" scrolling="0" width="110" display="inline-block" height="20"></iframe>
+<div class="text-center py-2">
+  <a href="https://github.com/scikit-image/scikit-image"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Star scikit-image on GitHub">
+    <img src="https://img.shields.io/github/stars/scikit-image/scikit-image?style=for-the-badge&logo=github&color=CE5C00&labelColor=CE5C00&logoColor=white"
+         alt="GitHub stars"
+         height="35"
+         loading="lazy">
+  </a>
 </div>
-        </div>
-        <div class="span9">
-            
+            </aside>
+            <main class="col-lg-9 order-1 order-lg-2" id="main-content" tabindex="-1">
+                
   <div class="well hero row-fluid summary-box docutils container">
 <div class="gallery-random">
   <script src="https://scikit-image.org/docs/dev/_static/random.js"></script>
@@ -455,15 +527,48 @@ is guided by the following core team:</p>
 </div></section>
 
 
+            </main>
         </div>
-    </div>
-    <div class="well footer">
-        <small>
-            &copy; Copyright the scikit-image development team.
-            Created using <a href="https://twitter.github.com/bootstrap/">Bootstrap</a> and <a href="https://sphinx.pocoo.org/">Sphinx</a>.
-        </small>
+
+        <!-- Footer -->
+        <footer class="footer mt-5">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="https://scikit-image.org" class="footer-logo" aria-label="scikit-image home">
+                        <img src="_static/img/logo.png" alt="" width="40" height="40">
+                        <span>scikit-image</span>
+                    </a>
+                    <p class="footer-tagline">Image processing in Python</p>
+                </div>
+
+                <div class="footer-meta">
+                    <small>&copy; scikit-image development team. Built with <a href="https://sphinx.pocoo.org/">Sphinx</a>.</small>
+                </div>
+
+                <div class="footer-social">
+                    <span class="footer-social-text">This project is part of the<br>scientific Python ecosystem</span>
+                    <a href="https://scientific-python.org" aria-label="Scientific Python" title="Scientific Python">
+                        <img src="https://cdn.jsdelivr.net/gh/scientific-python/scientific-python.org@main/static/images/logo.svg"
+                             alt="Scientific Python" height="45">
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <div class="chatbutton"><a href="https://skimage.zulipchat.com">Open Chat</a></div>
+    <!-- Chat button -->
+    <div class="chatbutton">
+        <a href="https://skimage.zulipchat.com" aria-label="Open Zulip chat">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="206.45 186.81 360.21 400.49" class="chatbutton-logo" aria-hidden="true">
+                <path d="M566.66 527.25c0 33.03-24.23 60.05-53.84 60.05H260.29c-29.61 0-53.84-27.02-53.84-60.05 0-20.22 9.09-38.2 22.93-49.09l134.37-120c2.5-2.14 5.74 1.31 3.94 4.19l-49.29 98.69c-1.38 2.76.41 6.16 3.25 6.16h191.18c29.61 0 53.83 27.03 53.83 60.05zm0-281.39c0 20.22-9.09 38.2-22.93 49.09l-134.37 120c-2.5 2.14-5.74-1.31-3.94-4.19l49.29-98.69c1.38-2.76-.41-6.16-3.25-6.16H260.29c-29.61 0-53.84-27.02-53.84-60.05s24.23-60.05 53.84-60.05h252.54c29.61 0 53.83 27.02 53.83 60.05z" fill="currentColor"/>
+            </svg>
+            Open Chat
+        </a>
+    </div>
+
+    <!-- Bootstrap 5.3.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 </html>
